@@ -29,11 +29,6 @@ def root():
            '9 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/mod/firtsvalue;second;third;... <br> <br> <br>' 'Obrigado por Utilizar a API Calculator <br><br><br><br><br><br><br><br>' 
     
 
-    print(f"Trabalho Desenvolvido na Disciplina de Desenvolvimento de Sistemas Distribuidos <br> Orientado pelo Prof. Robson <br> Aluno: André Delcole <br> RA:D30227-2")
-           
-
-
-
 
 #Rota Somar
 @app.route('/add/<value1>/<value2>', methods=['GET'])
@@ -117,8 +112,6 @@ def multiplication(value1, value2):
     return jsonify(result)
 
 
-
-
 #Rota Raiz Quadrada
 @app.route('/squareroot/<value>', methods=['GET'])
 def squareroot(value):
@@ -182,7 +175,6 @@ def harmonicmean(value1):
     result = {"Resultado": len(array) / sum(array)}
 
     return jsonify(result)
-
 
 
 
