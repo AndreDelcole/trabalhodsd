@@ -12,26 +12,28 @@ CORS(app)
 # Fazendo Validação caso de erro apresenta o código ASCII
 app.config['JSON_AS_ASCII'] = False
 
-# ----------------------------------------------------------------------------------------------------------------------
 
 
+#Criando as Rotas da Aplicação
 @app.route('/')
 def root():
     return 'Seja Bem Vindo(a) <br> Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/add/firtsvalue/secondvalue <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/subtraction/primeirovalor/segundovalor <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/division/primeirovalor/segundovalor <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/multiplication/primeirovalor/segundovalor <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/squareroot/valor <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/power/base/expoente <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/arithmeticaverage/primeirovalor;segundo;terceiro;... <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/harmonicmean/primeirovalor;segundo;terceiro;... <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/mod/primeirovalor;segundo;terceiro;... <br>'
+           'https://dsdtrabalho-andredelcole.herokuapp.com/subtraction/primeirovalor/segundovalor <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/division/primeirovalor/segundovalor <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/multiplication/primeirovalor/segundovalor <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/squareroot/valor <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/power/base/expoente <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/arithmeticaverage/primeirovalor;segundo;terceiro;... <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/harmonicmean/primeirovalor;segundo;terceiro;... <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/mod/primeirovalor;segundo;terceiro;... <br>'  + \
+
+           'Obrigado por Utilizar a API de Consulta'
 
 
-# ----------------------------------------------------------------------------------------------------------------------
 
 
+#Rota Somar
 @app.route('/add/<value1>/<value2>', methods=['GET'])
 def add(value1, value2):
 
@@ -50,24 +52,24 @@ def add(value1, value2):
     return jsonify(result)
 
 
-# ----------------------------------------------------------------------------------------------------------------------
 
 
+#Rota Subtração
 @app.route('/subtraction/<value1>/<value2>', methods=['GET'])
 def subtraction(value1, value2):
     try:
-        valor1 = int(value1)
+        value1 = int(value1)
     except:
-        return 'Primeiro valor inválido.'
+        return 'Seu primeiro Valor Digitado está Incorreto, digite um valor valido.'
 
     try:
-        valor2 = int(value2)
+        value2 = int(value2)
     except:
-        return 'Segundo valor inválido.'
+        return 'Seu segundo Valor Digitado está Incorreto, digite um valor valido.'
 
-    ret = {"Resultado": valor1 - valor2}
+    result = {"Resultado": valor1 - valor2}
 
-    return jsonify(ret)
+    return jsonify(result)
 
 
 # ----------------------------------------------------------------------------------------------------------------------
