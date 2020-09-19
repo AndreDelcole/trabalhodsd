@@ -18,7 +18,7 @@ app.config['JSON_AS_ASCII'] = False
 @app.route('/')
 def root():
     return 'Seja Bem Vindo(a) <br> Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/add/primeirovalor/segundovalor <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/add/firtsvalue/secondvalue <br>' + \
            'https://trab-robson-wallace-d27hec6.herokuapp.com/subtraction/primeirovalor/segundovalor <br>' + \
            'https://trab-robson-wallace-d27hec6.herokuapp.com/division/primeirovalor/segundovalor <br>' + \
            'https://trab-robson-wallace-d27hec6.herokuapp.com/multiplication/primeirovalor/segundovalor <br>' + \
@@ -33,21 +33,21 @@ def root():
 
 
 @app.route('/add/<value1>/<value2>', methods=['GET'])
-def somar(value1, value2):
+def add(value1, value2):
 
     try:
-        valor1 = int(value1)
+        value1 = int(value1)
     except:
-        return 'Primeiro valor inválido.'
+        return 'Seu primeiro Valor Digitado está Incorreto, digite um valor valido.'
 
     try:
-        valor2 = int(value2)
+        value2 = int(value2)
     except:
-        return 'Segundo valor inválido.'
+        return 'Seu segundo Valor Digitado está Incorreto, digite um valor valido.'
 
-    ret = {"Resultado": valor1 + valor2}
+    result = {"Resultado": value1 + value2}
 
-    return jsonify(ret)
+    return jsonify(result)
 
 
 # ----------------------------------------------------------------------------------------------------------------------
