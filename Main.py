@@ -27,7 +27,7 @@ def root():
            '7 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/arithmeticaverage/firtsvalue;second;third;... <br>' + \
            '8 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/harmonicmean/firtsvalue;second;third;... <br>' + \
            '9 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/mod/firtsvalue;second;third;... <br> <br> <br>'   
-           'Obrigado por Utilizar a API Calculator'
+           #'Obrigado por Utilizar a API Calculator'
 
 
 
