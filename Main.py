@@ -26,7 +26,8 @@ def root():
            '6 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/power/base/exponent <br>' + \
            '7 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/arithmeticaverage/firtsvalue;second;third;... <br>' + \
            '8 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/harmonicmean/firtsvalue;second;third;... <br>' + \
-           '9 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/mod/firtsvalue;second;third;... <br> <br> <br>' 'Obrigado por Utilizar a API Calculator <br><br><br><br><br><br><br><br>' 'Trabalho Desenvolvido na Disciplina de Desenvolvimento de Sistemas Distribuidos'
+           '9 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/mod/firtsvalue;second;third;... <br> <br> <br>' 'Obrigado por Utilizar a API Calculator <br><br><br><br><br><br><br><br>' 
+           'Trabalho Desenvolvido na Disciplina de Desenvolvimento de Sistemas Distribuidos <br> Orientado pelo Prof. Robson <br> Aluno: André Delcole <br> RA:D30227-2'
            
 
 
