@@ -17,7 +17,7 @@ app.config['JSON_AS_ASCII'] = False
 #Criando as Rotas da Aplicação
 @app.route('/')
 def root():
-    return 'Seja Bem Vindo(a)<br> API CALCULATOR <br> Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
+    return 'Seja Bem Vindo(a)<br><br> API CALCULATOR <br><br> Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
            '1 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/add/firtsvalue/secondvalue <br>' + \
            '2 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/subtraction/firtsvalue/secondvalue <br>' + \
            '3 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/division/firtsvalue/secondvalue <br>' + \
@@ -26,8 +26,8 @@ def root():
            '6 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/power/base/exponent <br>' + \
            '7 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/arithmeticaverage/firtsvalue;second;third;... <br>' + \
            '8 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/harmonicmean/firtsvalue;second;third;... <br>' + \
-           '9 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/mod/firtsvalue;second;third;... <br>'   
-                      #'Obrigado por Utilizar a API de Consulta'
+           '9 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/mod/firtsvalue;second;third;... <br> <br> <br>'   
+                    'Obrigado por Utilizar a API Calculator'
 
 
 
