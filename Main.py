@@ -181,28 +181,28 @@ def harmonicmean(value1):
     return jsonify(result)
 
 
-# ----------------------------------------------------------------------------------------------------------------------
 
 
+#Rota da Moda
 @app.route('/mod/<value1>', methods=['GET'])
 def mod(value1):
 
     dicionario = {}
 
     try:
-        array = [int(numeros) for numeros in value1.split(';')]
+        array = [int(numbers) for numbers in value1.split(';')]
     except:
         return 'A sequencia não possui somente números'
 
-    for numeros in array:
+    for numbers in array:
         try:
-            dicionario[numeros] = dicionario[numeros] + 1
+            dicionario[numbers] = dicionario[numbers] + 1
         except:
-            dicionario[numeros] = 1
+            dicionario[numbers] = 1
 
-    ret = {"Resultado": [numero for numero, repeticoes in dicionario.items() if repeticoes == max(dicionario.values())]}
+    result = {"Resultado": [numbers for numbers, repeticoes in dicionario.items() if repeticoes == max(dicionario.values())]}
 
-    return jsonify(ret)
+    return jsonify(result)
 
 
 def main():
