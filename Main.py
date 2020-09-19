@@ -21,14 +21,13 @@ def root():
            'https://dsdtrabalho-andredelcole.herokuapp.com/add/firtsvalue/secondvalue <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/subtraction/firtsvalue/secondvalue <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/division/firtsvalue/secondvalue <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/multiplication/primeirovalor/segundovalor <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/squareroot/valor <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/power/base/expoente <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/multiplication/firtsvalue/secondvalue <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/squareroot/value <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/power/base/exponent <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/arithmeticaverage/primeirovalor;segundo;terceiro;... <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/harmonicmean/primeirovalor;segundo;terceiro;... <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/mod/primeirovalor;segundo;terceiro;... <br>'  
-
-           #'Obrigado por Utilizar a API de Consulta'
+           'https://dsdtrabalho-andredelcole.herokuapp.com/mod/primeirovalor;segundo;terceiro;... <br>' + \  
+           'Obrigado por Utilizar a API de Consulta'
 
 
 
@@ -95,24 +94,24 @@ def division(value1, value2):
     return jsonify(result)
 
 
-# ----------------------------------------------------------------------------------------------------------------------
 
 
+#Rota Multiplicação
 @app.route('/multiplication/<value1>/<value2>', methods=['GET'])
 def multiplication(value1, value2):
     try:
-        valor1 = int(value1)
+        value1 = int(value1)
     except:
-        return 'Primeiro valor inválido.'
+        return 'Seu primeiro Valor Digitado está Incorreto, digite um valor valido.'
 
     try:
-        valor2 = int(value2)
+        value2 = int(value2)
     except:
-        return 'Segundo valor inválido.'
+        return 'Seu segundo Valor Digitado está Incorreto, digite um valor valido.'
 
-    ret = {"Resultado": valor1 * valor2}
+    result = {"Resultado": value1 * value2}
 
-    return jsonify(ret)
+    return jsonify(result)
 
 
 # ----------------------------------------------------------------------------------------------------------------------
