@@ -18,16 +18,16 @@ app.config['JSON_AS_ASCII'] = False
 @app.route('/')
 def root():
     return 'Seja Bem Vindo(a) <br> Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
-           '1' 'https://dsdtrabalho-andredelcole.herokuapp.com/add/firtsvalue/secondvalue <br>' + \
-           '2' 'https://dsdtrabalho-andredelcole.herokuapp.com/subtraction/firtsvalue/secondvalue <br>' + \
-           '3' 'https://dsdtrabalho-andredelcole.herokuapp.com/division/firtsvalue/secondvalue <br>' + \
-           '4' 'https://dsdtrabalho-andredelcole.herokuapp.com/multiplication/firtsvalue/secondvalue <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/squareroot/value <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/power/base/exponent <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/arithmeticaverage/primeirovalor;segundo;terceiro;... <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/harmonicmean/primeirovalor;segundo;terceiro;... <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/mod/primeirovalor;segundo;terceiro;... <br>'   
-           #'Obrigado por Utilizar a API de Consulta'
+           '1 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/add/firtsvalue/secondvalue <br>' + \
+           '2 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/subtraction/firtsvalue/secondvalue <br>' + \
+           '3 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/division/firtsvalue/secondvalue <br>' + \
+           '4 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/multiplication/firtsvalue/secondvalue <br>' + \
+           '5 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/squareroot/value <br>' + \
+           '6 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/power/base/exponent <br>' + \
+           '7 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/arithmeticaverage/primeirovalor;segundo;terceiro;... <br>' + \
+           '8 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/harmonicmean/primeirovalor;segundo;terceiro;... <br>' + \
+           '9 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/mod/primeirovalor;segundo;terceiro;... <br>' + \  
+                      'Obrigado por Utilizar a API de Consulta'
 
 
 
