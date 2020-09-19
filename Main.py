@@ -21,15 +21,15 @@ def root():
            'Trabalho da Disciplina de Desenvolvimento de Sistemas Distribuidos <br>' + \
            'Backend - API de consulta de Operações <br>' + \ 
            'Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
-           'https://trabalhodsd-andredelcole-d302272.herokuapp.com/sum/primeirovalor/segundovalor <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/subtraction/primeirovalor/segundovalor <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/division/primeirovalor/segundovalor <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/multiplication/primeirovalor/segundovalor <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/squareroot/valor <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/power/base/expoente <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/arithmeticaverage/primeirovalor;segundo;terceiro;... <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/harmonicmean/primeirovalor;segundo;terceiro;... <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/mod/primeirovalor;segundo;terceiro;... <br>'
+           'https://dsdtrabalho-andredelcole-d302272.herokuapp.com/sum/primeirovalor/segundovalor <br>' + \
+           #'https://trab-robson-wallace-d27hec6.herokuapp.com/subtraction/primeirovalor/segundovalor <br>' + \
+           #'https://trab-robson-wallace-d27hec6.herokuapp.com/division/primeirovalor/segundovalor <br>' + \
+           #'https://trab-robson-wallace-d27hec6.herokuapp.com/multiplication/primeirovalor/segundovalor <br>' + \
+           #'https://trab-robson-wallace-d27hec6.herokuapp.com/squareroot/valor <br>' + \
+           #'https://trab-robson-wallace-d27hec6.herokuapp.com/power/base/expoente <br>' + \
+           #'https://trab-robson-wallace-d27hec6.herokuapp.com/arithmeticaverage/primeirovalor;segundo;terceiro;... <br>' + \
+           #'https://trab-robson-wallace-d27hec6.herokuapp.com/harmonicmean/primeirovalor;segundo;terceiro;... <br>' + \
+           #'https://trab-robson-wallace-d27hec6.herokuapp.com/mod/primeirovalor;segundo;terceiro;... <br>'
 
 
 # ----------------------------------------------------------------------------------------------------------------------
