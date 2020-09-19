@@ -24,9 +24,9 @@ def root():
            '4 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/multiplication/firtsvalue/secondvalue <br>' + \
            '5 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/squareroot/value <br>' + \
            '6 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/power/base/exponent <br>' + \
-           '7 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/arithmeticaverage/primeirovalor;segundo;terceiro;... <br>' + \
-           '8 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/harmonicmean/primeirovalor;segundo;terceiro;... <br>' + \
-           '9 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/mod/primeirovalor;segundo;terceiro;... <br>'   
+           '7 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/arithmeticaverage/firtsvalue;second;third;... <br>' + \
+           '8 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/harmonicmean/firtsvalue;second;third;... <br>' + \
+           '9 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/mod/firtsvalue;second;third;... <br>'   
                       #'Obrigado por Utilizar a API de Consulta'
 
 
@@ -155,7 +155,7 @@ def power(base, exponent):
 def arithmeticaverage(value1):
 
     try:
-        array = [int(numbers) for numbers in value1.split(';')]
+        array = [float(numbers) for numbers in value1.split(';')]
     except:
         return 'A sequencia digitada deve possuir somente números'
 
@@ -192,7 +192,7 @@ def mod(value1):
     try:
         array = [int(numbers) for numbers in value1.split(';')]
     except:
-        return 'A sequencia não possui somente números'
+        return 'A sequencia digitada deve possuir somente números'
 
     for numbers in array:
         try:
