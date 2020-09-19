@@ -164,21 +164,21 @@ def arithmeticaverage(value1):
     return jsonify(result)
 
 
-# ----------------------------------------------------------------------------------------------------------------------
 
 
+#Rota da Média Harmonica
 @app.route('/harmonicmean/<value1>', methods=['GET'])
 def harmonicmean(value1):
 
     try:
-        array = [1 / int(numeros) for numeros in value1.split(';')]
+        array = [1 / int(numbers) for numbers in value1.split(';')]
     except:
-        return 'A sequencia não possui somente números'
+        return 'A sequencia digitada deve possuir somente números'
 
 
-    ret = {"Resultado": len(array) / sum(array)}
+    result = {"Resultado": len(array) / sum(array)}
 
-    return jsonify(ret)
+    return jsonify(result)
 
 
 # ----------------------------------------------------------------------------------------------------------------------
