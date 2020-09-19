@@ -20,7 +20,7 @@ def root():
     return 'Seja Bem Vindo(a) <br> Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/add/firtsvalue/secondvalue <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/subtraction/firtsvalue/secondvalue <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/division/primeirovalor/segundovalor <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/division/firtsvalue/secondvalue <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/multiplication/primeirovalor/segundovalor <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/squareroot/valor <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/power/base/expoente <br>' + \
@@ -72,27 +72,27 @@ def subtraction(value1, value2):
     return jsonify(result)
 
 
-# ----------------------------------------------------------------------------------------------------------------------
 
 
+#Rota Divisão
 @app.route('/division/<value1>/<value2>', methods=['GET'])
 def division(value1, value2):
     try:
-        valor1 = int(value1)
+        value1 = int(value1)
     except:
-        return 'Primeiro valor inválido.'
+        return 'Seu primeiro Valor Digitado está Incorreto, digite um valor valido.'
 
     try:
-        valor2 = int(value2)
+        value2 = int(value2)
     except:
-        return 'Segundo valor inválido.'
+        return 'Seu segundo Valor Digitado está Incorreto, digite um valor valido.'
 
     try:
-        ret = {"Resultado": valor1 / valor2}
+        result = {"Resultado": value1 / value2}
     except ZeroDivisionError:
-        return 'Divisão por zero não é possível'
+        return 'Você não pode realizar uma Divisão por zero, verifique os números e tente novamente'
 
-    return jsonify(ret)
+    return jsonify(result)
 
 
 # ----------------------------------------------------------------------------------------------------------------------
