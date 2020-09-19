@@ -116,17 +116,17 @@ def multiplication(value1, value2):
 
 
 
-
+#
 @app.route('/squareroot/<value>', methods=['GET'])
 def squareroot(value):
     try:
-        valor1 = int(value)
+        value1 = int(value)
     except:
         return 'Valor inválido.'
 
-    ret = {"Resultado": sqrt(valor1)}
+    result = {"Resultado": sqrt(result)}
 
-    return jsonify(ret)
+    return jsonify(result)
 
 
 # ----------------------------------------------------------------------------------------------------------------------
