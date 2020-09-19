@@ -171,7 +171,7 @@ def arithmeticaverage(value1):
 def harmonicmean(value1):
 
     try:
-        array = [1 / int(numbers) for numbers in value1.split(';')]
+        array = [1 / float(numbers) for numbers in value1.split(';')]
     except:
         return 'A sequencia digitada deve possuir somente números'
 
