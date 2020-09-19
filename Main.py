@@ -155,7 +155,7 @@ def power(base, exponent):
 def arithmeticaverage(value1):
 
     try:
-        array = [int(numbers) for numbers in value1.split(';')]
+        array = [float(numbers) for numbers in value1.split(';')]
     except:
         return 'A sequencia digitada deve possuir somente números'
 
