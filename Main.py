@@ -124,7 +124,7 @@ def squareroot(value):
     except:
         return 'Valor inválido.'
 
-    result = {"Resultado": sqrt(result)}
+    result = {"Resultado": sqrt(value1)}
 
     return jsonify(result)
 
