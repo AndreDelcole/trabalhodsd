@@ -1,3 +1,4 @@
+#importando as Bibliotecas utilizadas na Aplicação
 import os
 from flask import Flask, jsonify
 from flask_cors import CORS
@@ -7,6 +8,8 @@ app = Flask(__name__)
 
 CORS(app)
 
+
+# Fazendo Validação caso de erro apresenta o código ASCII
 app.config['JSON_AS_ASCII'] = False
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -14,8 +17,11 @@ app.config['JSON_AS_ASCII'] = False
 
 @app.route('/')
 def root():
-    return 'Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/sum/primeirovalor/segundovalor <br>' + \
+    return 'Seja Bem Vinda(a) <br>' + \
+           'Trabalho da Disciplina de Desenvolvimento de Sistemas Distribuidos <br>' + \
+           'Backend - API de consulta de Operações <br>' + \ 
+           'Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
+           'https://trabalhodsd-andredelcole-d302272.herokuapp.com/sum/primeirovalor/segundovalor <br>' + \
            'https://trab-robson-wallace-d27hec6.herokuapp.com/subtraction/primeirovalor/segundovalor <br>' + \
            'https://trab-robson-wallace-d27hec6.herokuapp.com/division/primeirovalor/segundovalor <br>' + \
            'https://trab-robson-wallace-d27hec6.herokuapp.com/multiplication/primeirovalor/segundovalor <br>' + \
