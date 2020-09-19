@@ -17,7 +17,7 @@ app.config['JSON_AS_ASCII'] = False
 #Criando as Rotas da Aplicação
 @app.route('/')
 def root():
-    return 'Seja Bem Vindo(a) <br> Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
+    return 'Seja Bem Vindo(a)<br> API CALCULATOR <br> Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
            '1 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/add/firtsvalue/secondvalue <br>' + \
            '2 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/subtraction/firtsvalue/secondvalue <br>' + \
            '3 -  ' 'https://dsdtrabalho-andredelcole.herokuapp.com/division/firtsvalue/secondvalue <br>' + \
@@ -148,20 +148,20 @@ def power(base, exponent):
     return jsonify(result)
 
 
-# ----------------------------------------------------------------------------------------------------------------------
 
 
+#Rota Média Aritimetica
 @app.route('/arithmeticaverage/<value1>', methods=['GET'])
 def arithmeticaverage(value1):
 
     try:
-        array = [int(numeros) for numeros in value1.split(';')]
+        array = [int(numbers) for numbers in value1.split(';')]
     except:
-        return 'A sequencia não possui somente números'
+        return 'A sequencia digitada deve possuir somente números'
 
-    ret = {"Resultado": sum(array) / len(array)}
+    result = {"Resultado": sum(array) / len(array)}
 
-    return jsonify(ret)
+    return jsonify(result)
 
 
 # ----------------------------------------------------------------------------------------------------------------------
