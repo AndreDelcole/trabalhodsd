@@ -26,8 +26,8 @@ def root():
            'https://dsdtrabalho-andredelcole.herokuapp.com/power/base/exponent <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/arithmeticaverage/primeirovalor;segundo;terceiro;... <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/harmonicmean/primeirovalor;segundo;terceiro;... <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/mod/primeirovalor;segundo;terceiro;... <br>' + \  
-           'Obrigado por Utilizar a API de Consulta'
+           'https://dsdtrabalho-andredelcole.herokuapp.com/mod/primeirovalor;segundo;terceiro;... <br>'   
+           #'Obrigado por Utilizar a API de Consulta'
 
 
 
