@@ -39,12 +39,12 @@ def add(value1, value2):
     try:
         value1 = int(value1)
     except:
-        return 'Seu primeiro Valor Digitado está Incorreto, digite um valor valido.'
+        return 'Seu primeiro valor digitado está incorreto, digite um valor valido.'
 
     try:
         value2 = int(value2)
     except:
-        return 'Seu segundo Valor Digitado está Incorreto, digite um valor valido.'
+        return 'Seu segundo valor digitado está incorreto, digite um valor valido.'
 
     result = {"Resultado": value1 + value2}
 
@@ -59,12 +59,12 @@ def subtraction(value1, value2):
     try:
         value1 = int(value1)
     except:
-        return 'Seu primeiro Valor Digitado está Incorreto, digite um valor valido.'
+        return 'Seu primeiro valor digitado está incorreto, digite um valor valido.'
 
     try:
         value2 = int(value2)
     except:
-        return 'Seu segundo Valor Digitado está Incorreto, digite um valor valido.'
+        return 'Seu segundo valor digitado está incorreto, digite um valor valido.'
 
     result = {"Resultado": value1 - value2}
 
@@ -79,17 +79,17 @@ def division(value1, value2):
     try:
         value1 = int(value1)
     except:
-        return 'Seu primeiro Valor Digitado está Incorreto, digite um valor valido.'
+        return 'Seu primeiro valor digitado está incorreto, digite um valor valido.'
 
     try:
         value2 = int(value2)
     except:
-        return 'Seu segundo Valor Digitado está Incorreto, digite um valor valido.'
+        return 'Seu segundo valor digitado está incorreto, digite um valor valido.'
 
     try:
         result = {"Resultado": value1 / value2}
     except ZeroDivisionError:
-        return 'Você não pode realizar uma Divisão por zero, verifique os números e tente novamente'
+        return 'Você não pode realizar uma divisão por zero, verifique os números e tente novamente'
 
     return jsonify(result)
 
@@ -102,12 +102,12 @@ def multiplication(value1, value2):
     try:
         value1 = int(value1)
     except:
-        return 'Seu primeiro Valor Digitado está Incorreto, digite um valor valido.'
+        return 'Seu primeiro valor digitado está incorreto, digite um valor valido.'
 
     try:
         value2 = int(value2)
     except:
-        return 'Seu segundo Valor Digitado está Incorreto, digite um valor valido.'
+        return 'Seu segundo valor digitado está incorreto, digite um valor valido.'
 
     result = {"Resultado": value1 * value2}
 
@@ -116,37 +116,36 @@ def multiplication(value1, value2):
 
 
 
-#
+#Rota Raiz Quadrada
 @app.route('/squareroot/<value>', methods=['GET'])
 def squareroot(value):
     try:
         value1 = int(value)
     except:
-        return 'Valor inválido.'
+        return 'O valor digitado é inválido, digite um valor correto.'
 
     result = {"Resultado": sqrt(value1)}
 
     return jsonify(result)
 
 
-# ----------------------------------------------------------------------------------------------------------------------
 
-
+#Rota da Potenciação
 @app.route('/power/<base>/<exponent>', methods=['GET'])
 def power(base, exponent):
     try:
-        li_base = int(base)
+        vl_base = int(base)
     except:
-        return 'Base Inválida.'
+        return 'O valor para a base está inválido, digite um valor correto.'
 
     try:
-        li_exponent = int(exponent)
+        vl_exponent = int(exponent)
     except:
         return 'Expoente inválido.'
 
-    ret = {"Resultado": li_base ** li_exponent}
+    result = {"Resultado": vl_base ** vl_exponent}
 
-    return jsonify(ret)
+    return jsonify(result)
 
 
 # ----------------------------------------------------------------------------------------------------------------------
