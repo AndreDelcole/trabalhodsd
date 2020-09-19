@@ -18,7 +18,7 @@ app.config['JSON_AS_ASCII'] = False
 @app.route('/')
 def root():
     return 'Seja Bem Vindo(a) <br> Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
-           'https://trab-robson-wallace-d27hec6.herokuapp.com/sum/primeirovalor/segundovalor <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/add/primeirovalor/segundovalor <br>' + \
            'https://trab-robson-wallace-d27hec6.herokuapp.com/subtraction/primeirovalor/segundovalor <br>' + \
            'https://trab-robson-wallace-d27hec6.herokuapp.com/division/primeirovalor/segundovalor <br>' + \
            'https://trab-robson-wallace-d27hec6.herokuapp.com/multiplication/primeirovalor/segundovalor <br>' + \
