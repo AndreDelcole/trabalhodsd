@@ -32,7 +32,7 @@ def root():
 # ----------------------------------------------------------------------------------------------------------------------
 
 
-@app.route('/sum/<value1>/<value2>', methods=['GET'])
+@app.route('/add/<value1>/<value2>', methods=['GET'])
 def somar(value1, value2):
 
     try:
