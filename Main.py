@@ -19,7 +19,7 @@ app.config['JSON_AS_ASCII'] = False
 def root():
     return 'Seja Bem Vindo(a) <br> Digite qual operação gostaria de fazer entre as opções <br> <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/add/firtsvalue/secondvalue <br>' + \
-           'https://dsdtrabalho-andredelcole.herokuapp.com/subtraction/primeirovalor/segundovalor <br>' + \
+           'https://dsdtrabalho-andredelcole.herokuapp.com/subtraction/firtsvalue/secondvalue <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/division/primeirovalor/segundovalor <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/multiplication/primeirovalor/segundovalor <br>' + \
            'https://dsdtrabalho-andredelcole.herokuapp.com/squareroot/valor <br>' + \
@@ -67,7 +67,7 @@ def subtraction(value1, value2):
     except:
         return 'Seu segundo Valor Digitado está Incorreto, digite um valor valido.'
 
-    result = {"Resultado": valor1 - valor2}
+    result = {"Resultado": value1 - value2}
 
     return jsonify(result)
 
